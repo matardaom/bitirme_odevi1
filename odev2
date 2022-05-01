@@ -1,0 +1,24 @@
+import random
+import  random as r
+sayı=r.randint(10,100)
+toplam = 0
+deneme_sayısı=0
+print("Tahmin oyununa hoş geldiniz, bilgisayar 10 ile 100 arasında bir sayı tuttu\nSiz ise 3 tane sayı girip eşitleme çalışacaksınız! Haydi başlayalım! ")
+print(100*"*")
+while True:
+    for i in range(3):
+        tahmin=int(input(f"{i+1}.sayıyı girin - "))
+        toplam+=tahmin
+    if toplam == sayı:
+        print("Tebrikler, toplam bilgisayarın sayısına eşit! ")
+        print(f"Yanlış yapma sayınız {deneme_sayısı}")
+        break
+    else:
+        print("Toplam bilgisayarın sayısına eşit değil tekrar deneyin! ")
+        deneme_sayısı+=1
+        toplam=0
+    if deneme_sayısı==6:
+        print(f"Kopya vereyim sayı {sayı+random.randint(5,10)} ile {sayı-random.randint(5,10)} arasında :)")
+    if deneme_sayısı == 12:
+        print(f"Daha yakın kopya vereyim sayı {sayı + random.randint(2, 5)} ile {sayı - random.randint(2, 5)} arasında :D")
+

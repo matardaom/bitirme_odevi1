@@ -1,0 +1,13 @@
+
+import random as r
+karakterler= "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789!@#$%^&*()"
+şifreler=[]
+adet=int(input("Kaç şifre oluşturmak istersiniz? - "))
+for i in range(0,adet):
+    şifre=""
+    for i in range(0,16):
+        şifre_eleman=r.choice(karakterler)
+        şifre+=şifre_eleman
+    şifreler.append(şifre)
+for i in range(0,adet):
+    print(f"{i+1}. şifre: ",şifreler[i])

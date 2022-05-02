@@ -1,0 +1,83 @@
+mühendislik=["Elektrik ve Elektronik cihazlarını kurmak (bağlamak, monte etmek)","İyi bir mekanik teknisyeni veya tekniker ile birlikte çalışmak","Tahtadan ayaklı kitaplık yapmak","Bir atölyede staj (pratik) yapmak","Bir evin onarımında birlikte çalışmak","Oto mekanik teknisyeni olmak için kursa gitmek","Bir bisiklet tamiri yapmak","Bir konser için yükselticili ses düzeni kurmak"]
+bilim_insanı=["Bilimsel kitaplar ve dergiler okumak","Bir araştırma enstitüsünde veya laboratuarında çalışmak","Kimyasal maddelerle deneyler yapmak","Bilimsel bir teoriyi anlatmak","Bir fizik veya kimya kursuna katılmak","Bir ruh veya doğa bilimleri projesinde çalışmak","Kaya tabakalarının jeolojik yapısını araştırmak","Bir problemin çözümünde uzun zaman çalışmak"]
+artist=["Resim çizmek Taslak (kroki) yapmak, resim boyamak","Mobilya, elbise, plaket tasarlamak","Bir müzik enstrümanı( aleti) çalmak","Portre veya diğer fotoğrafları düzenlemek","Herhangi bir müzik parçası veya bir tiyatro parçası yazmak","Bir kısa hikaye, bir roman veya bir tiyatro senaryosu yazmak","Yetenekli bir sanatçı ile çalışmak","Sahneye çıkarak dans etmek, şarkı söylemek,tiyatro oynamak"]
+muhabir=["Deneyimli pedagog (eğitimci) veya tedavici (terapist) ile karşılaşmak","Konusu “Grup çalışması” olan bir kursa katılmak","Bir kuruluşta kamu yararına gönüllü çalışmak","Gençlerle suçluluk teması üzerine mülakat yapmak","Psikoloji makaleleri ve kitapları okumak","Bağıntı problemleri üzerine konuşmak","Olay yerlerine gitmek","Mikrafon önünde konuşmak"]
+yonetici=["Ticari başarı için strateji öğrenmek","İşi başka şekilde yönetmek veya organize etmek","Bir konferansa katılmak","Yönetim ve yönetim teknikleri üzerine kısa bir kursa katılmak","Kendi özel firmanı yönetmek","Bir çalışma grubu için sorumluluk almak","Ekonomi ve politika üzerine tartışma yapmak","Organizatör veya şirket danışmanı olarak çalışmak"]
+memur=["Verileri bilgisayara girmek","Fotokopi ve diğer büro makinelerini kullanmak","Küçük bir işletmenin muhasebesini yürütmek","Bir firmada ücret bordrosu hazırlamak","Satın alma ve üretim üzerine liste hazırlamak","Listelerin ve verilerin kaydını tutmak","Personel bilgilerini kayıt etmek ve yönetmek","Bilgisayarda yazı yazmak"]
+tamirci=["Testere, torna ve bileme makinesi kullanabilirim","Bir otomobilin yağ veya tekerleğini değiştirebilirim","Bir dikiş makinesi veya matkapla iyi bir şekilde çalışabilirim","Bir taslak resme göre mobilya montajı ve tamiri yapabilirim","Basit elektrik tamiratları yapabilirim","Bisiklet tekerlek iç lastiğini (şamyelini) değiştirebilirim","Tıkanmış boruları temizleyebilirim","Bir traktör, otobüs veya kamyondan anlarım"]
+profesör=["Matematikte cebir problemlerini çözebilirim","Bir deney veya proje yürütebilirim","Bir matematik fonksiyonu grafik olarak gösterebilirim","Basit bir kimyasal formülü yorumlayabilirim","Uyduların Dünya’ya niçin düşmediklerini anlıyorum","Bilimsel rapor yazabilirim","Evrenin oluşumu ile ilgili teoriyi bilirim","Genetikteki DNA nın rolünü açıklayabilirim"]
+oyuncu=["Bir müzik aleti çalabilirim","Bir tiyatro parçasında oyuna katılabilirim","Bir şiiri heyecanlı bir şekilde yüksek sesle okuyabilirim","Bir resim boyayabilirim","Sesimi iyi kullanırım","Güzel şiir veya hikâye yazabilirim","Sanatsal yönlü fotoğraf çekebilirim","Gösteri alanı dekoru yapabilirim"]
+ogretmen=["Bir şeyler göstermeyi severim","Yardım etmeyi severim","Güzel yazı yazarım","Hitabım iyidir","Soru çözmeyi severim","Konu anlatmayı severim","Başkaları ile arkadaşça yaşamak bana kolay gelir","Eğitmek veya öğretmekte çok sabırlıyımdır"]
+a=0
+b=0
+c=0
+d=0
+e=0
+f=0
+g=0
+h=0
+j=0
+k=0
+
+
+
+for i in mühendislik:
+    soru=input(f"{i},\nA) Evet,\nB) Hayır")
+    if soru.lower()== "a":
+        a=a+1
+for i in bilim_insanı:
+    soru=input(f"{i},\nA) Evet,\nB) Hayır")
+    if soru.lower()== "a":
+        b=b+1
+for i in artist:
+    soru=input(f"{i},\nA) Evet,\nB) Hayır")
+    if soru.lower()== "a":
+        c=c+1
+for i in muhabir:
+    soru=input(f"{i},\nA) Evet,\nB) Hayır")
+    if soru.lower()== "a":
+        d=d+1
+for i in yonetici:
+    soru=input(f"{i},\nA) Evet,\nB) Hayır")
+    if soru.lower()== "a":
+        e=e+1
+for i in memur:
+    soru=input(f"{i},\nA) Evet,\nB) Hayır")
+    if soru.lower()== "a":
+        f=f+1
+for i in tamirci:
+    soru=input(f"{i},\nA) Evet,\nB) Hayır")
+    if soru.lower()== "a":
+        g=g+1
+for i in profesör:
+    soru=input(f"{i},\nA) Evet,\nB) Hayır")
+    if soru.lower()== "a":
+        h=h+1
+for i in oyuncu:
+    soru=input(f"{i},\nA) Evet,\nB) Hayır")
+    if soru.lower()== "a":
+        j=j+1
+for i in ogretmen:
+    soru=input(f"{i},\nA) Evet,\nB) Hayır")
+    if soru.lower()== "a":
+        k=k+1
+if a>b and a>c and a>e and a>f and a>g and a>h and a>j and a>k and a>d:
+    print("Mühendislik alanında daha yeteneklisin")
+elif b>a and b>c and b>e and b>f and b>g and b>h and b>j and b>k and b>d:
+    print("Bilim alanında daha yeteneklisin")
+elif c>b and c>a and c>e and c>f and c>g and c>h and c>j and c>k and c>d:
+    print("Sanat alanında daha yeteneklisin")
+elif d>b and d>c and d>e and d>f and d>g and d>h and d>j and d>k and d>a:
+    print("Televizyonculuk alanında daha yeteneklisin")
+elif e>b and e>c and e>a and e>f and e>g and e>h and e>j and e>k and e>d:
+    print("Yöneticilik alanında daha yeteneklisin")
+elif f>b and f>c and f>e and f>a and f>g and f>h and f>j and f>k and f>d:
+    print("Memurluk alanında daha yeteneklisin")
+elif g>b and g>c and g>e and g>f and g>a and g>h and g>j and g>k and g>d:
+    print("Tamir alanında daha yeteneklisin")
+elif h>b and h>c and h>e and h>f and h>g and h>a and h>j and h>k and h>d:
+    print("Fen bilimleri ve matematik alanında daha yeteneklisin")
+elif j>b and j>c and j>e and j>f and j>g and j>h and j>a and j>k and j>d:
+    print("Tiyatro alanında daha yeteneklisin")
+elif k > b and k > c and k > e and k > f and k > g and k > h and k > j and k > a and k > d:
+    print("Öğretmenlik alanında daha yeteneklisin")

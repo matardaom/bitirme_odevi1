@@ -1,0 +1,101 @@
+ocak=[]
+subat=[]
+mart=[]
+nisan=[]
+mayıs=[]
+haziran=[]
+temmuz=[]
+agustos=[]
+eylul=[]
+ekim=[]
+kasım=[]
+aralık=[]
+def ekleme(list,ne,gider,maaş):
+    list.append(f"{ne} ve gideri {gider}, kalan maaşınız {maaş-int(gider)}")
+maas=int(input("Öncelikle aylık maaşınız ne kadar? "))
+while True:
+    ay=input("İstenilen ay(çıkmak için q yazın)")
+    if ay=="q":
+        break
+    elif ay.lower()== "ocak":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(ocak,ney,gid,maas)
+    elif ay.lower() == "şubat":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(subat,ney,gid,maas)
+    elif ay.lower() == "mart":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(mart,ney,gid,maas)
+    elif ay.lower() == "nisan":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(nisan,ney,gid,maas)
+    elif ay.lower() == "mayıs":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(mayıs,ney,gid,maas)
+    elif ay.lower() == "haziran":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(haziran,ney,gid,maas)
+    elif ay.lower() == "temmuz":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(temmuz,ney,gid,maas)
+    elif ay.lower() == "ağustos":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(agustos,ney,gid,maas)
+    elif ay.lower() == "eylül":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(eylul,ney,gid,maas)
+    elif ay.lower() == "ekim":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(ekim,ney,gid,maas)
+    elif ay.lower() == "kasım":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(kasım,ney,gid,maas)
+    elif ay.lower() == "aralık":
+        ney=input("Neyin giderini gireceksiniz? ")
+        gid=input("Gideriniz ne kadar? ")
+        ekleme(aralık,ney,gid,maas)
+    else:
+        print("Geçerli bir ay değil lütfen yazımına dikkat ederek tekrar deneyin")
+
+while True:
+    göst=input("Hangi ayınkine bakmak istersiniz? (çıkmak için q basın) ")
+    if göst=="q":
+        break
+    elif göst.lower()== "ocak":
+        print(ocak)
+    elif göst.lower() == "şubat":
+        print(subat)
+    elif göst.lower() == "mart":
+        print(mart)
+    elif göst.lower() == "nisan":
+        print(nisan)
+    elif göst.lower() == "mayıs":
+        print(mayıs)
+    elif göst.lower() == "haziran":
+        print(haziran)
+    elif göst.lower() == "temmuz":
+        print(temmuz)
+    elif göst.lower() == "ağustos":
+        print(agustos)
+    elif göst.lower() == "eylül":
+        print(eylul)
+    elif göst.lower() == "ekim":
+        print(ekim)
+    elif göst.lower() == "kasım":
+        print(kasım)
+    elif göst.lower() == "aralık":
+        print(aralık)
+    else:
+        print("Geçerli bir ay değil lütfen yazımına dikkat ederek tekrar deneyin")
+
